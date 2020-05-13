@@ -1,0 +1,10 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<link rel="stylesheet" type="text/css" href="CSS/main.css">
+<footer>
+    <div class="rodape">
+        <hr>
+        <p>Programação Orientada a Objetos - Fatec Praia Grande</p>
+        <p>&#169; Priscila do Nascimento </p>
+    </div>
+</footer>
