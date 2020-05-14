@@ -1,0 +1,27 @@
+
+/*------------------------
+        TIPOGRAFIA
+--------------------------*/
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #e6e6e6;
+    font-size: 1em;	
+}
+ h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+h1{
+	color:#4e4e4e;
+	font-size: 2.5em;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: none;
+    transition: 0.3s;
+    color:#70a1ff;
+}
