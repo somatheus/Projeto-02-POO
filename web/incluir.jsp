@@ -38,7 +38,13 @@
         <%@include file="WEB-INF/jspf/menu.jspf"%>
         <center>
         <h2>Adicionar Cliente</h2>
+    
+   
+        
+        
         <form>
+            <label  for="staticEmail2" class="sr-only">Email</label>
+          
             Nome:<br/>
             <input type="text" name="nome"/><br>
             CPF:<br/>
