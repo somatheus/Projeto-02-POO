@@ -25,7 +25,7 @@
             </div><!-- Fim topor-->
             
             <div class="home"><!-- Inicio home-->
-                <h2>Total de cadastrados</h2>
+                <h2>Total de Cadastros</h2>
                 <div class="clientes">
                     <h3>Clientes</h3>
                     <p>N° de Clientes: <%=DB.getClientes().size()%></p>

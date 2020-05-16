@@ -11,7 +11,7 @@
     <body>
         <%@include file="../WEB-INF/jspf/menu.jspf" %>
         <div style="text-align: center">
-            
+            <p><a href="../index.jsp">Home</a></p>
             <h3><a href="adicionaCliente.jsp">Adicionar Cliente</a></h3>
             
             <center>
@@ -24,16 +24,24 @@
                         <th>E-mail</th>
                         <th>Telefone</th>
                         <th>Endereço</th>
+                        <th colspan="3">Ação</th>
                     </tr>
-                    <%for (Cliente c : DB.getClientes()) {%>
+                    <%for (Cliente cliente : DB.getClientes()) {%>
                     <tr>
-                        <td><%= DB.getClientes().indexOf(c)%></td>
-                        <td><%= c.getNome()%></td>
-                        <td><%= c.getCpf()%></td>
-                        <td><%= c.getRg()%></td>
-                        <td><%= c.getEmail()%></td>
-                        <td><%= c.getTelefone()%></td>
-                        <td><%= c.getEndereco()%></td>
+                        <td><%= DB.getClientes().indexOf(cliente)%></td>
+                        <td><%= cliente.getNome()%></td>
+                        <td><%= cliente.getCpf()%></td>
+                        <td><%= cliente.getRg()%></td>
+                        <td><%= cliente.getEmail()%></td>
+                        <td><%= cliente.getTelefone()%></td>
+                        <td><%= cliente.getEndereco()%></td>
+                        <td>
+                        <% int i = DB.getClientes().indexOf(cliente);%>
+                        <a href="editaCliente.jsp?i=<%=i%>">Alterar</a>
+                    </td>
+                    <td>
+                        <a href="excluiCliente.jsp?i=<%=i%>">Excluir</a>
+                    </td>
                     </tr>
                     <%}%>
                 </table>
