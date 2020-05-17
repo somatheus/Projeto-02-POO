@@ -31,6 +31,7 @@
     
         <table  style="text-align: center">
             <tr>
+                <th>Índice Fornecedores</th>
                 <th>Nome da empresa</th>
                 <th>Razão Social</th>
                 <th>CNPJ</th>
@@ -41,6 +42,7 @@
             </tr>
             <%for(Fornecedor fornecedor : DB.getFornecedores()){%>
                 <tr>
+                    <td><%=DB.getFornecedores().indexOf(fornecedor)%></td>
                     <td><%=fornecedor.getNome()%></td>
                     <td><%=fornecedor.getRazaoSocial()%></td>
                     <td><%=fornecedor.getCnpj()%></td>
