@@ -48,7 +48,7 @@
                         <div style="color:red"><%=erro%></div>
                 <%}else{%>
                     <br/>
-                    <form method="post">
+                    <form class="formexcluir" method="post">
                         <input type="hidden" name="i" value="<%=i%>"/>
                         <p>Nome do fornecedor: <%=fornecedor.getNome()%><p/>
                         <p>CNPJ: <%=fornecedor.getCnpj()%><p/>

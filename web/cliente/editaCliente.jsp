@@ -74,31 +74,31 @@
                     <div style="color:red"><%=erro%></div>
             <%}else{%>
                 <br/>
-                
-                <div class="editar1">
-                     
-                    <div class="form3">
-                        <input type="hidden" name="i" value="<%=i%>"/>
-                        Nome do Cliente<br/>
-                        <input type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>
-                        CPF:<br/>
-                        <input type="text" name="razaoSocial" value="<%=cliente.getRg()%>"/><br/>
-                        RG:<br/>
-                         <input type="text" name="cnpj" value="<%=cliente.getRg()%>"/><br/>   
+                <form>
+                    <div class="editar1">
+                        <div class="form3">
+                            <input type="hidden" name="i" value="<%=i%>"/>
+                            Nome do Cliente<br/>
+                            <input type="text" name="nome" value="<%=cliente.getNome()%>"/><br/>
+                            CPF:<br/>
+                            <input type="text" name="cpf" value="<%=cliente.getCpf()%>"/><br/>
+                            RG:<br/>
+                             <input type="text" name="rg" value="<%=cliente.getRg()%>"/><br/>   
+                        </div>
+
+                        <div class="form4">
+                            Email: <br/>
+                            <input type="text" name="email" value="<%=cliente.getEmail()%>"/><br/>
+                            Telefone:<br/>
+                            <input type="text" name="telefone" value="<%=cliente.getTelefone()%>"/><br/>
+                            Endereço:<br/>
+                            <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
+                            <br/><br/>
+                            <input  class="salvar" type="submit" name="editar" value="Salvar Edição"><br/>
+                        </div> 
+
                     </div>
-                    
-                    <div class="form4">
-                        Email: <br/>
-                        <input type="text" name="email" value="<%=cliente.getEmail()%>"/><br/>
-                        Telefone:<br/>
-                        <input type="text" name="telefone" value="<%=cliente.getTelefone()%>"/><br/>
-                        Endereço:<br/>
-                        <input type="text" name="endereco" value="<%=cliente.getEndereco()%>"/><br/>
-                        <br/><br/>
-                        <input  class="salvar" type="submit" name="editar" value="Salvar Edição"><br/>
-                    </div> 
-               
-                </div>
+                </form>
                
             <%}%>
         </center>
