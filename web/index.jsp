@@ -8,35 +8,170 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <title>Home</title>
+        
+ <style>
+     
+ body{
+background: SteelBlue;
+ }
+/*------------------------
+  Formatação Cabeçalho
+--------------------------*/
+#area-cabeçalho{
+background-color:LightBlue;
+padding: 15px;
+text-align:center;
+}
+
+
+h1{
+color: #4e4e4e;
+font-size: 2.5em;
+}
+
+a:link, a:visited{
+color:#FFF;
+padding: 8px 12px;
+
+}
+
+a{
+color:#FFF;
+text-decoration: none;
+font-size: 0.9em;
+padding: 0.5 1.5em;
+}
+
+a:hover{
+color:SteelBlue;
+background-color: #FFF;
+border-radius: 40px;
+}
+
+#area-logo, #area-menu{
+    padding: 10px;
+}
+#area-menu a{
+    font-size: 1.5em;
+}
+    
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+}
+
+.branco{
+    color:white;
+}
+
+.blue{
+    color:SteelBlue;
+}
+
+/*------------------------
+  Total Cadastros
+--------------------------*/
+.home{
+    
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.cadastro{
+   width: 210px; 
+   float:left ;
+   background: LightBlue;
+   border-radius: 40px;
+}
+
+.cadastro2{
+    width: 210px;   
+    float:right ;
+    background: LightBlue;
+    border-radius: 40px;
+   
+}
+.rodape{
+     width: 500px;  
+     padding: 15px;
+ }
+ 
+.cadastro, .cadastro2 a:houver{
+     background:#FFF;
+     color: crimson;
+     
+ }
+ 
+ h3{
+     font-size: 1.0em;
+ }
+ 
+ .cadastro, a p{
+     font-size: 1.3em;
+ }
+  .cadastro2, a p{
+     font-size: 1.3em;
+ }
+ 
+ /*------------------------
+  Total Cadastros
+--------------------------*/
+ 
+ .rodape{
+     bottom:0;
+     width:100%;
+     margin-top: 10px;
+     line-height: 20px;
+     text-align: center;
+ }
+ 
+ 
+
+
+
+
+ </style>
+        
+        
     </head>
     <body>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <main>
             
-            <div id="topo"><!-- Inicio topor-->
-		<ul id="navegacao">
-		    <li> 
-                        <a id="listaCliente" href="cliente/listaClientes.jsp">Listar clientes</a>
-                    </li>
-                    <li> 
-                        <a id="listaFornecedor" href="fornecedor/listaFornecedores.jsp">Listar fornecedores</a>
-                    </li>
-	        </ul>
-            </div><!-- Fim topor-->
+            <div id="area-cabeçalho"><!-- Inicio cabeçalho-->
+                <div id="area-logo"> 
+                    <h1 class="blue"> Cadastro<span class="branco">Tec</span></h1>
+                </div>
+                
+                   <div id="area-menu"> 
+                        <a href="index.jsp">Home</a>  
+                        <a href="cliente/listaClientes.jsp">Listar Clientes</a>
+                        <a href="fornecedor/listaFornecedores.jsp">Listar Fornecedores</a>
+                </div>
+            </div><!-- Fim cabeçalho-->
             
             <div class="home"><!-- Inicio home-->
-                <h2>Total de Cadastros</h2>
-                <div class="clientes">
+                <h1>Total de Cadastros</h1>
+                <div class="cadastro">
                     <h3>Clientes</h3>
                     <p>N° de Clientes: <%=DB.getClientes().size()%></p>
-                    <a href="cliente/adicionaCliente.jsp">Adicionar cliente</a>
+                    <a href="cliente/adicionaCliente.jsp">Adicionar cliente</a><br/><br/>
                 </div>
-                <div class="fornecedores">
+                <div class="cadastro2">
                     <h3>Fornecedores</h3>
                     <p>N° de Fornecedores: <%=DB.getFornecedores().size()%></p>                    
-                    <a class="btn btn-primary" href="fornecedor/adicionaFornecedor.jsp" role="button">Adicionar fornecedor</a><br/>
-                </div>
+                    <a class="btn btn-primary" href="fornecedor/adicionaFornecedor.jsp" role="button">Adicionar fornecedor</a><br/><br/>
+                </div> <br><br><br>
             </div> <!-- Fim home--> 
+       
         </main>
         <br><br><br>
         <%@include file="WEB-INF/jspf/footer.jspf" %>
