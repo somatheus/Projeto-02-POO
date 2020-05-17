@@ -7,11 +7,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
-        <title>Home</title>
+        <title>Home</title>   
         
- <style>
-     
- body{
+        <style>
+            
+            body{
 background: SteelBlue;
  }
 /*------------------------
@@ -103,12 +103,7 @@ h1{
      width: 500px;  
      padding: 15px;
  }
- 
-.cadastro, .cadastro2 a:houver{
-     background:#FFF;
-     color: crimson;
-     
- }
+
  
  h3{
      font-size: 1.0em;
@@ -126,24 +121,23 @@ h1{
 --------------------------*/
  
  .rodape{
-     bottom:0;
-     width:100%;
-     margin-top: 10px;
-     line-height: 20px;
-     text-align: center;
+     
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
  }
  
- 
-
-
-
-
- </style>
-        
+ .rodape p{
+     float: both;
+     font-size: 1.5em;
+     width: 440px;
+ }
+            
+        </style>
         
     </head>
+    
     <body>
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
         <main>
             
             <div id="area-cabeçalho"><!-- Inicio cabeçalho-->
@@ -170,10 +164,13 @@ h1{
                     <p>N° de Fornecedores: <%=DB.getFornecedores().size()%></p>                    
                     <a class="btn btn-primary" href="fornecedor/adicionaFornecedor.jsp" role="button">Adicionar fornecedor</a><br/><br/>
                 </div> <br><br><br>
+                
+                <div class="rodape">
+                    <%@include file="WEB-INF/jspf/footer.jspf" %>
+                </div>
             </div> <!-- Fim home--> 
        
         </main>
         <br><br><br>
-        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>

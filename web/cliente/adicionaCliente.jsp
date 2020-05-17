@@ -31,119 +31,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="../CSS/main.css">
-        <title>Incluir</title>
-        
-   <style>
-    body{
-    background: SteelBlue;
-     }
-    /*------------------------
-      Formatação Cabeçalho
-    --------------------------*/
-    #area-cabeçalho{
-    background-color:LightBlue;
-    padding: 15px;
-    text-align:center;
-    }
-
-
-    h1{
-    color: #4e4e4e;
-    font-size: 2.5em;
-    }
-
-    a:link, a:visited{
-    color:#FFF;
-    padding: 8px 12px;
-
-    }
-
-    a{
-    color:#FFF;
-    text-decoration: none;
-    font-size: 0.9em;
-    padding: 0.5 1.5em;
-    }
-
-    a:hover{
-    color:SteelBlue;
-    background-color: #FFF;
-    border-radius: 40px;
-    }
-
-    #area-menu{
-        padding: 10px;
-    }
-    
-    #area-menu a{
-        font-size: 1.5em;
-    }
-
-    h1{
-        color:#4e4e4e;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    
-    p{
-        font-size: 2.0em;
-        text-align: center;
-    }
-
-    .branco{
-        color:white;
-    }
-
-    .blue{
-        color:SteelBlue;
-    }
-    
-    /*------------------------
-      Formatação INPUT
-    --------------------------*/
-    
-    .botão{
-        width: 100px;
-        padding: 5px;
-        color:white;
-        background-color: palegreen;
-    }
-    
-    .botão:hover{
-         color:palegreen;
-         background-color: #FFF;
-    }
-    
-    .botão2{
-        width: 100px;
-        padding: 5px;
-        color:#FFF;
-        background-color: Tomato;
-    }
-    
-    .botão2:hover{
-        color:Tomato;
-        background-color: #FFF;
-    }
-    
-    form{
-        width: 450px;
-    }
-    
-    .form1{
-      float: left;
-      width: 200px;  
-      margin-bottom: 15px;
-    }
-    
-    .form2{
-      float:right; 
-      width: 225px;  
-      margin-bottom: 15px;
-    }
-    
-    
-  </style>  
+        <title>Incluir</title> 
         
     </head>
     <body>
@@ -160,7 +48,8 @@
         <center>
         <h1>Adicionar Cliente</h1>
     
-        <form>
+
+            <div class="editar1">
             <div class="form1">
                 Nome:<br/>
                 <input placeholder="Digite o Nome" type="text" name="nome" /><br>
@@ -179,9 +68,8 @@
                 Endereço:<br/>
                 <input placeholder="Digite o Endereço" type="text" name="endereco"/><br>
                 <input type="submit" class="botão2" name="cancel" value="Cancelar"/>
-                
             </div>
-        </form>
+         </div>
         </center>
         <%@include file="../WEB-INF/jspf/footer.jspf" %>
     </body>

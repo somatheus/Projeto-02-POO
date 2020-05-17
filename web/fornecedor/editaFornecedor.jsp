@@ -56,110 +56,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="../CSS/main.css">
         <title>Editar Fornecedor</title>
-        
-         <style>
-    body{
-    background: SteelBlue;
-     }
-    /*------------------------
-      Formatação Cabeçalho
-    --------------------------*/
-    #area-cabeçalho{
-    background-color:LightBlue;
-    padding: 15px;
-    text-align:center;
-    }
-
-
-    h1{
-    color: #4e4e4e;
-    font-size: 2.5em;
-    }
-
-    a:link, a:visited{
-    color:#FFF;
-    padding: 8px 12px;
-
-    }
-
-    a{
-    color:#FFF;
-    text-decoration: none;
-    font-size: 0.9em;
-    padding: 0.5 1.5em;
-    }
-
-    a:hover{
-    color:SteelBlue;
-    background-color: #FFF;
-    border-radius: 40px;
-    }
-
-    #area-menu{
-        padding: 10px;
-    }
-    
-    #area-menu a{
-        font-size: 1.5em;
-    }
-
-    h1{
-        color:#4e4e4e;
-        font-size: 2.5em;
-        text-align: center;
-    }
-    
-    p{
-        font-size: 2.0em;
-        text-align: center;
-    }
-
-    .branco{
-        color:white;
-    }
-
-    .blue{
-        color:SteelBlue;
-    }
-    
-    /*------------------------
-      Formatação INPUT
-    --------------------------*/
-    
-    .salvar{
-        width: 100px;
-        padding: 5px;
-        color:white;
-        background-color: palegreen;
-    }
-    
-    .salvar:hover{
-         color:palegreen;
-         background-color: #FFF;
-    }
-    
-  
-    
-    form{
-        width: 450px;
-    }
-    
-    .form1{
-      float: left;
-      width: 200px;  
-      margin-bottom: 15px;
-    }
-    
-    .form2{
-      float:right; 
-      width: 225px;  
-      margin-bottom: 15px;
-    }
-  </style>
-        
     </head>
     <body>
-        <%@include file="../WEB-INF/jspf/menu.jspf"%>
         
             <div id="area-cabeçalho"><!-- Inicio cabeçalho-->
                 <div id="area-menu"> 
@@ -176,8 +74,9 @@
                     <div style="color:red"><%=erro%></div>
             <%}else{%>
                 <br/>
-                <form method="post">
-                    <div class="form1">
+                
+                <div class="editar1">
+                    <div class="form3">
                         <input type="hidden" name="i" value="<%=i%>"/>
                         Nome do Fornecedor<br/>
                         <input type="text" name="nome" value="<%=fornecedor.getNome()%>"/><br/>
@@ -187,7 +86,7 @@
                         <input type="text" name="cnpj" value="<%=fornecedor.getCnpj()%>"/><br/>
                         
                     </div>
-                     <div class="form2">
+                     <div class="form4">
                          Email: <br/>
                         <input type="text" name="email" value="<%=fornecedor.getEmail()%>"/><br/>
                         Telefone:<br/>
@@ -198,7 +97,8 @@
                         <input class="salvar" type="submit" name="editar" value="Salvar Edição"><br/>   
                             
                     </div>
-                </form>
+                    
+                </div>  
             <%}%>
         </center>
     </body>

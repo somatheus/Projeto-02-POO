@@ -8,107 +8,9 @@
         <link rel="stylesheet" type="text/css" href="../CSS/main.css">
         <title>JSP Page</title>
         
-  <style>
-        body{
-    background: SteelBlue;
-     }
-    /*------------------------
-      Formatação Cabeçalho
-    --------------------------*/
-    #area-cabeçalho{
-    background-color:LightBlue;
-    padding: 15px;
-    text-align:center;
-    }
-
-
-    h1{
-    color: #4e4e4e;
-    font-size: 2.5em;
-    }
-    
-      p{
-        font-size: 2.0em;
-        text-align: center;
-    }
-
-    a:link, a:visited{
-    color:#FFF;
-    padding: 8px 12px;
-
-    }
-
-    a{
-    color:#FFF;
-    text-decoration: none;
-    font-size: 0.9em;
-    padding: 0.5 1.5em;
-    }
-
-    a:hover{
-    color:SteelBlue;
-    background-color: #FFF;
-    border-radius: 40px;
-    }
-
-    #area-menu{
-        padding: 10px;
-    }
-     #area-menu a{
-        font-size: 1.5em;
-    }
-
-    h1{
-        color:#4e4e4e;
-        font-size: 2.5em;
-        text-align: center;
-    }
-
-    .branco{
-        color:white;
-    }
-
-    .blue{
-        color:SteelBlue;
-    }
-   
-   /*------------------------
-     Formatação Tabela
-   --------------------------*/
-   table{
-     background-color:LightBlue;  
-     border-radius: 30px;
-     width: 999px;
-   }   
-   
-   td{
-       padding: 7px;
-   }
-   th{
-       font-size: 1.5em;
-   }
-   
-   .exluir{
-       color:#FFF;
-       background-color: Tomato;
-   }
-   
-   .alterar{
-       color:#FFF;
-       background-color: PaleGreen;
-   }
-   td:hover{
-       color: white;
-       background-color:SteelBlue; ;
-   }
-   
-   
-  </style>
-        
     </head>
     
     <body>
-         <%@include file="../WEB-INF/jspf/menu.jspf" %>
         <div id="area-cabeçalho"><!-- Inicio cabeçalho-->
             <div id="area-menu"> 
                 <a href="../index.jsp">Home</a>  
@@ -117,7 +19,7 @@
                 </div>
             </div><!-- Fim cabeçalho-->
             
-        <div style="text-align: center">
+        <div class="list" style="text-align: center">
             <h1>Lista de Clientes</h1>
             <p><a href="adicionaCliente.jsp">Adicionar novo Cliente</a></p>
             
@@ -153,9 +55,7 @@
                     
                     <%}%>
                 </table>
-                
             </center>
-                
             <br/>
         </div>
         <%@include file="../WEB-INF/jspf/footer.jspf" %>

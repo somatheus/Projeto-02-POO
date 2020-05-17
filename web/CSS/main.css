@@ -1,1 +1,285 @@
+body{
+background: SteelBlue;
+ }
+/*------------------------
+  Formatação Cabeçalho
+--------------------------*/
+#area-cabeçalho{
+background-color:LightBlue;
+padding: 15px;
+text-align:center;
+}
 
+
+h1{
+color: #4e4e4e;
+font-size: 2.5em;
+}
+
+a:link, a:visited{
+color:#FFF;
+padding: 8px 12px;
+
+}
+
+a{
+color:#FFF;
+text-decoration: none;
+font-size: 0.9em;
+padding: 0.5 1.5em;
+}
+
+a:hover{
+color:SteelBlue;
+background-color: #FFF;
+border-radius: 40px;
+}
+
+#area-logo, #area-menu{
+    padding: 10px;
+}
+#area-menu a{
+    font-size: 1.5em;
+}
+    
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+}
+
+.branco{
+    color:white;
+}
+
+.blue{
+    color:SteelBlue;
+}
+
+/*------------------------
+  Total Cadastros
+--------------------------*/
+.home{
+    
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.cadastro{
+   width: 210px; 
+   float:left ;
+   background: LightBlue;
+   border-radius: 40px;
+}
+
+.cadastro2{
+    width: 210px;   
+    float:right ;
+    background: LightBlue;
+    border-radius: 40px;
+   
+}
+.rodape{
+     width: 500px;  
+     padding: 15px;
+ }
+ 
+.cadastro, .cadastro2 a:houver{
+     background:#FFF;
+     color: crimson;
+     
+ }
+ 
+ h3{
+     font-size: 1.0em;
+ }
+ 
+ .cadastro, a p{
+     font-size: 1.3em;
+ }
+  .cadastro2, a p{
+     font-size: 1.3em;
+ }
+ 
+
+  
+    /*------------------------
+      Formatação INPUT EDITAR
+    --------------------------*/
+    
+    .salvar{
+        width: 100px;
+        padding: 5px;
+        color:white;
+        background-color: palegreen;
+    }
+    
+    .salvar:hover{
+        color:palegreen;
+        background-color: #FFF;
+    }
+    
+    .form3{
+      float: left;
+      width: 200px;  
+      margin-bottom: 15px;
+    }
+    
+    .form4{
+      float:right; 
+      width: 225px;  
+      margin-bottom: 15px;
+    }
+    
+    .editar1{
+        width: 440px;
+        text-align: center;
+        
+    }
+    
+    /*------------------------
+    Formatação INPUT ADICIONAR
+    --------------------------*/
+    
+    .botão{
+        width: 100px;
+        padding: 5px;
+        color:white;
+        background-color: palegreen;
+    }
+    
+    .botão:hover{
+         color:palegreen;
+         background-color: #FFF;
+    }
+    
+    .botão2{
+        width: 100px;
+        padding: 5px;
+        color:#FFF;
+        background-color: Tomato;
+    }
+    
+    .botão2:hover{
+        color:Tomato;
+        background-color: #FFF;
+    }
+    
+    form{
+        width: 450px;
+    }
+    
+    .form1{
+      float: left;
+      width: 200px;  
+
+    }
+    
+    .form2{
+      float:right; 
+      width: 225px;  
+    }
+    
+    /*------------------------
+     Formatação INPUT EXCLUIR
+    --------------------------*/
+    
+    .excluir{
+        width: 100px;
+        padding: 5px;
+        color:#FFF;
+        background-color: Tomato;
+    }
+    
+    .excluir:hover{
+        color:Tomato;
+        background-color: #FFF;
+    }
+    
+  
+    
+    form{
+        width: 450px;
+        background-color:LightBlue ;
+        text-align: center;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    
+    .form1{
+      float: left;
+      width: 200px;  
+      margin-bottom: 15px;
+    }
+    
+    .form2{
+      float:right; 
+      width: 225px;  
+      margin-bottom: 15px;
+    }
+    
+    .formexcluir p{
+      font-size: 1.0em;  
+    }
+    
+    
+   /*------------------------
+     Formatação Tabela
+   --------------------------*/
+   table{
+     background-color:LightBlue;  
+     border-radius: 30px;
+     width: 999px;
+   }   
+   
+   td{
+       padding: 7px;
+   }
+   th{
+       font-size: 1.5em;
+   }
+   
+   .exluir{
+       color:#FFF;
+       background-color: Tomato;
+   }
+   
+   .alterar{
+       color:#FFF;
+       background-color: PaleGreen;
+   }
+   td:hover{
+       color: white;
+       background-color:SteelBlue; ;
+   }
+   .list{
+       text-align: center; 
+   }
+   
+   .list p{
+       font-size: 2.0em;
+   }
+   
+ /*------------------------
+          Rodapé
+--------------------------*/
+ 
+ .rodape{
+     width:100%;
+     margin-top: 50px ;
+     line-height: 20px;
+     text-align: center;
+ }
+ 
+ 
+    body{
+    background: SteelBlue;
+     }
+ 

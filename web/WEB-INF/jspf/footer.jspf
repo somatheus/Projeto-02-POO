@@ -2,15 +2,11 @@
 <%@ page pageEncoding="UTF-8" %>
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 
-<style>
-    
-    
-    
-</style>
+
 <footer>
     <div class="rodape">
         <br>
         <p class="espaço">Programação Orientada a Objetos - Fatec Praia Grande</p>
-        <p>&#169; Priscila do Nascimento - Matheus </p>
+        <p>&#169; Priscila do Nascimento - Matheus Oliveira Santos </p>
     </div>
 </footer>
