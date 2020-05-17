@@ -97,6 +97,10 @@
        color:#FFF;
        background-color: PaleGreen;
    }
+   td:hover{
+       color: white;
+       background-color:SteelBlue; ;
+   }
    
    
   </style>
