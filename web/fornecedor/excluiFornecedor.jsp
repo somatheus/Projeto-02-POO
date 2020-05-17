@@ -138,9 +138,9 @@
              <div id="area-cabeçalho"><!-- Inicio cabeçalho-->
                 
                 <div id="area-menu"> 
-                    <a href="index.jsp">Home</a>  
-                    <a href="cliente/listaClientes.jsp">Listar Clientes</a>
-                    <a href="fornecedor/listaFornecedores.jsp">Listar Fornecedores</a>
+                    <a href="../index.jsp">Home</a>  
+                    <a href="../cliente/listaClientes.jsp">Listar Clientes</a>
+                    <a href="listaFornecedores.jsp">Listar Fornecedores</a>
                 </div>
             </div><!-- Fim cabeçalho-->
         
